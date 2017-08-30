@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+ 
+<head>
+<script type="" src="lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/httprequest.js"></script>
+<meta charset="UTF-8">
+</head>
+
+<body style="test-align:center;">
+	<div id="main-container">
+		<div id="word-list-form">
+			<form>
+			<div>
+				<p>language</p>
+				<input type="dropdown" value="en" id="language"></input>
+			</div>
+			<div>
+				<p>Lexical Category</p>
+				<input type="textbox"  value="Noun" id="lexical-category"></input>
+			</div>
+			<div>
+				<p>Word Size</p>
+				<input type="textbox" value="5" id="word-length"></input>
+			</div>
+			<div>
+				<p>Number of words</p>
+				<input type="textbox" value="5" id="word-limit"></input>
+			</div>
+			
+		<button type="button" id="update" value="Submit">Submit a request</button>
+		<div id="text-area">
+		<textarea id="words" rows="4" cols="100">
+		</textarea>
+		</div>
+		</form>
+	</div>
+</body>
+
+<footer>
+</footer>
+
+</html>

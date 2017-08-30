@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 	var jsondata;
 
-	$("#update").click(function () {
+	$("#submit-button").click(function () {
 
 		getWordList();
 	});

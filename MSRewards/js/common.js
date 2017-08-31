@@ -4,11 +4,55 @@
  */
 
 $(document).ready(function () {
-
-	var jsondata;
+	
+	var count = 1;
+	
+	function runSearches(data){
+		var json = JSON.parse(data);
+		var word_id = json[0]['word_id'].trim();
+		var word = json[0]['word'].trim();
+		
+		url = "https://www.bing.com/search?q=definition:" + word;
+			$.ajax({
+				url: url,
+				headers: {'Access-Control-Allow-Origin': '*'},
+			});
+			
+		postMSRequest(word_id, word);
+	}
+	
+	function getWord(){
+		url = "http://dev.msrewards.local/api/getWord"
+			$.ajax({
+				url: url,
+				method: 'GET',
+				success: function (result) {
+					runSearches(result);
+				}
+			});
+	}
+	
+	function postMSRequest(word_id, word){
+		url = "http://dev.msrewards.local/api/postMSRequest?word_id=" + word_id
+			$.ajax({
+				url: url,
+				method: 'POST',
+				success: function (result) {
+					$("#results-table").append(
+					"<tr>" + 
+					"<td>" + count +"</td><td>" + word_id + "</td><td>" + word + "</td><td>Sucess</td>" +
+					"</tr>"
+					);
+				}
+			});
+			count++;
+	}
+	
+	$("#submit").click(function () {
+		getWord();
+	});
 
 	$("#submit-button").click(function () {
-
 		getWordList();
 	});
 

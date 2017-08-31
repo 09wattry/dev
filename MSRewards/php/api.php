@@ -9,13 +9,39 @@
 	
 	$conn = new REST();
 	
-	$json;
+	function getWord(){
+		
+		$numberOfWords =       get("SELECT word_id 
+										FROM word 
+										ORDER BY word_id DESC LIMIT 1");
+		
+		$randNumber = rand(1, $numberOfWords[0]['word_id']);
+		$used = get("SELECT word_id FROM request WHERE word_id="."'".$randNumber."'");
+		
+		if($used != null){
+			echo "This has already been used. Please consult your DB word list";
+		} else{
+			$randWord = get("SELECT word,word_id FROM word WHERE word_id="."'".$randNumber."'");
+			echo json_encode($randWord);
+		}
+		
+	}
+	
+	function postMSRequest(){
+		if(isset($_GET['word_id'])){
+			$word_id = $_GET['word_id'];
+			echo post("INSERT INTO REQUEST (word_id) VALUES (".$word_id.")");
+		} else {
+				echo "No record found.";
+		} 
+	}
+	
 	function wordlist($resource){
 		
 		if(isset($_GET['offset'])){
 			$offset = $_GET['offset'];
 		} else {
-			$result = querydb("SELECT COUNT(*) FROM word WHERE category_key ="."'".$_GET['lex']."'");
+			$result = get("SELECT COUNT(*) FROM word WHERE category_key ="."'".$_GET['lex']."'");
 			$offset =  $result[0]['COUNT(*)'];
 		}
 		
@@ -23,12 +49,8 @@
 		$json = $odi->makeRequest();
 		$json = json_decode($json, true)["results"];
 		foreach ($json as $word) {
-			$wordlist[] = array ("word" => $word["word"],
-				"oed_id" => $word["id"],
-				"category_key" => $_GET['lex']
-			);
+			$wordlist[] = array ("word" => $word["word"], "category_key" => $_GET['lex'], "oed_id" => $word["id"]);
 		}
-		
 		echo json_encode($wordlist);
 	}
 	

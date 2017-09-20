@@ -8,12 +8,13 @@ def get_length(dna):
     >>> get_length('ATCG')
     4
     """
+	
     return len(dna)
 
 
 def is_longer(dna1, dna2):
     """ (str, str) -> bool
-
+	
     Return True if and only if DNA sequence dna1 is longer than DNA sequence
     dna2.
 
@@ -22,6 +23,7 @@ def is_longer(dna1, dna2):
     >>> is_longer('ATCG', 'ATCGGA')
     False
     """
+	
     if len(dna1) > len(dna2):
         return True
     else:
@@ -30,7 +32,7 @@ def is_longer(dna1, dna2):
 
 def count_nucleotides(dna, nucleotide):
     """ (str, str) -> int
-
+	
     Return the number of occurrences of nucleotide in the DNA sequence dna.
 
     >>> count_nucleotides('ATCGGC','G')
@@ -38,11 +40,13 @@ def count_nucleotides(dna, nucleotide):
     >>> count_nucleotides('ATCTA', 'G')
     0
     """
+	
     return dna.count(nucleotide)
 
+	
 def contains_sequence(dna1, dna2):
     """ (str, str) -> bool
-
+	
     Return True if and only if DNA sequence dna2 occurs in the DNA sequence
     dna1.
 
@@ -50,8 +54,8 @@ def contains_sequence(dna1, dna2):
     True
     >>> contains_sequence('ATCGGC', 'GT')
     False
-
     """
+	
     if dna2 in dna1:
         return True
     else:
@@ -60,6 +64,7 @@ def contains_sequence(dna1, dna2):
 		
 def is_valid_sequence(dna):
 	""" (str) -> bool
+	
 	Return True if and only if the DNA sequence is valid 
 	(that is, it contains no characters other than 'A', 'T', 'C' and 'G')
 	
@@ -74,9 +79,10 @@ def is_valid_sequence(dna):
 			return False	
 	return True
 	
-
+	
 def insert_sequence(dna1, dna2, i):
 	""" (str, str, int) -> str
+	
 	Returns a string dna sequence after dna2 has been concatenated with dna2 at index id.	
 		
 	>>> insert_sequence("CCGG", "AT", 2)
@@ -90,6 +96,7 @@ def insert_sequence(dna1, dna2, i):
 	
 def get_complement(nucleotide):
 	""" (str) -> str
+	
 	Returns the complement nucleotide of the input parameter nucleotide.
 	
 	>>> get_complement("A")
@@ -97,7 +104,7 @@ def get_complement(nucleotide):
 	>>> get_complement("G")
 	C
 	"""
-
+	
 	if nucleotide == 'A':
 		return 'T'
 	elif nucleotide == 'T':
@@ -109,8 +116,10 @@ def get_complement(nucleotide):
 	else:
 		return "Invalid input"
 	
+	
 def get_complementary_sequence(dna):	
 	""" (str) -> str
+	
 	Returns the complementary DNA sequence of the input parameter dna. 
 	
 	>>> get_complementary_sequence("AGTC")
@@ -118,14 +127,10 @@ def get_complementary_sequence(dna):
 	>>> get_complementary_sequence("TCAG")
 	AGTC
 	"""
-	comp_seqence = ""
 	
+	comp_seqence = ""
 	for char in dna:
 		comp_seqence = comp_seqence + get_complement(char)
 		
 	return comp_seqence
-	
-	
-if __name__ == '__main__':
-	print(get_complementary_sequence("TCAG"))
 	

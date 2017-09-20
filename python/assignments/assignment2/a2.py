@@ -109,7 +109,23 @@ def get_complement(nucleotide):
 	else:
 		return "Invalid input"
 	
+def get_complementary_sequence(dna):	
+	""" (str) -> str
+	Returns the complementary DNA sequence of the input parameter dna. 
+	
+	>>> get_complementary_sequence("AGTC")
+	TCAG
+	>>> get_complementary_sequence("TCAG")
+	AGTC
+	"""
+	comp_seqence = ""
+	
+	for char in dna:
+		comp_seqence = comp_seqence + get_complement(char)
+		
+	return comp_seqence
+	
 	
 if __name__ == '__main__':
-	print(get_complement("A"))
+	print(get_complementary_sequence("TCAG"))
 	

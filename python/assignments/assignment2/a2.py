@@ -134,3 +134,6 @@ def get_complementary_sequence(dna):
 		
 	return comp_seqence
 	
+	
+	
+	

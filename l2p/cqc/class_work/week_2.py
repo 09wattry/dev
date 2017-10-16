@@ -1,8 +1,12 @@
+import doctest
+
 ''' This file script is used to better understand the methods for writing a palindrome
 	there are serveral algorythms that we will test.
 	
 '''
-import doctest
+import week_1
+
+
 
 def reverse(s):
 	rev = ''
@@ -14,16 +18,16 @@ def reverse(s):
 	#print("n = " + str(i))
 	return rev
 
-def method1(s):
+def is_palindrome_v1(s):
 	''' (str) -> bool
 	
 	Reverses s and compares it to the original string.
 	
 	Return True if s is a palindrome or False if it is not.
 	
-	>>> method1('racecar')
+	>>> is_palindrome_v1('racecar')
 	True
-	>>> method1('tame')
+	>>> is_palindrome_v1('tame')
 	False
 	'''
 	if reverse(s) == s:
@@ -31,18 +35,17 @@ def method1(s):
 	
 	return False
 	
-#print(method1('racecar'))
 
-def method2(s):
+def is_palinedrome_v2(s):
 	''' (str) -> bool
 	
 	Reverse half of the string and compare it to the other half.
 	
 	Return True if s is a palindrome or False if it is not.
 	
-	>>> method1('racecar')
+	>>> is_palinedrome_v2('racecar')
 	True
-	>>> method1('tame')
+	>>> is_palinedrome_v2('tame')
 	False
 	'''
 	mid = len(s) // 2
@@ -51,18 +54,18 @@ def method2(s):
 	
 	return False
 	
-#print(method2('racecar'))
 
-def method3(s):
+
+def is_palinedrome_v3(s):
 	''' (str) -> bool
 	
 	Compare every second letter, if they all match then the word is a palindrome 
 	
 	Return True if s is a palindrome or False if it is not.
 	
-	>>> method1('racecar')
+	>>> is_palinedrome_v3('racecar')
 	True
-	>>> method1('tame')
+	>>> is_palinedrome_v3('tame')
 	False
 	'''
 	i = 0
@@ -81,6 +84,13 @@ def method3(s):
 		
 	return False
 		
-#print(method3('racecar'))
 
-doctest.testmod()
+print("Method: " + __name__)
+
+word = input('Enter a word: ')
+if is_palindrome_v1(word):
+	print(word + " is a palindrome")
+else:
+	print(word + " is not a palindrome")
+	
+#doctest.testmod()

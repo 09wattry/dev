@@ -1,0 +1,169 @@
+
+
+<!-- ServerInfo: BL2IDSLGN3B062 2017.08.16.20.31.44 Live1 ExclusiveNew LocVer:0 -->
+<!-- PreprocessInfo: azbldrun:CY1AZRBLD46,  -- Version: 16,0,27497,0 -->
+<html dir="ltr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <base href="https://login.live.com/pp1600/"/>
+        <title>Microsoft account</title>
+        <meta name="PageID" content="i4400">
+        <meta name="SiteID" content="38936">
+        <meta name="ReqLC" content="1033">
+        <meta name="LocLC" content=" ">
+        <style type="text/css">
+            body {
+                background-color: #fff;
+                color: #000;
+                font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+            }
+            h1 {
+                line-height: 56px;
+                font-weight: 200;
+                margin: 20px 0;
+            }
+            h2 {
+                font-size: 34px;
+                font-weight: 200;
+                line-height: 40px;
+                padding: 3.18px 0;
+            }
+            p {
+                margin: 12px 0;
+                padding: 0.22px 0;
+            }
+            .header, .content {
+                width: 90%;
+                margin: 0 auto;
+            }
+            .logo {
+                vertical-align: middle;
+            }
+            .site-identifier {
+                line-height: 23px;
+                font-size: 17px;
+                margin-left: 15px;
+                padding-left: 15px;
+                border-left: 1px solid #aaa;
+                color: #aaa
+            }
+            .footer {
+                margin-top: 100px;
+            }
+        </style>
+        <script type="text/javascript">
+            function EndPPCRL(rs, u)
+            {
+                try
+                {
+                    if (external)
+                    {
+                        if (rs)
+                        {
+                            external.RequestStatus = rs;
+                            external.WebFlowUrl = u;
+                            external.NotifyIdentityChanged();
+                            external.ReturnToApp();
+                        }
+                        else
+                        {
+                            external._cs(); external.BrowseToAuthUI();
+                        }
+                    }
+                }
+                catch (e) { }
+            }
+            function BodyLoad()
+            {
+                EndPPCRL(-2147186656);
+            }
+        </script>
+        <script type="text/javascript">
+            WizardExternalHelper = function(){ };
+            WizardExternalHelper.prototype =
+            {
+                setProperty: function(key, value)
+                {
+                    try
+                    {
+                        if (window.webkit && window.webkit.messageHandlers)
+                        {
+                            var propertyKeyValue = {};
+                            propertyKeyValue[key] = value;
+                            window.webkit.messageHandlers.Property.postMessage(JSON.stringify(propertyKeyValue));
+                        }
+                        else
+                        {
+                            try
+                            {
+                                window.external.Property(key) = value;
+                            }
+                            catch (e)
+                            {
+                                window.external.Property(key, value);
+                            }
+                        }
+                    }
+                    catch (e) { }
+                },
+                finalNext: function()
+                {
+                    try
+                    {
+                        if (window.webkit && window.webkit.messageHandlers)
+                        {
+                            window.webkit.messageHandlers.FinalNext.postMessage("");
+                        }
+                        else
+                        {
+                            window.external.FinalNext();
+                        }
+                    }
+                    catch (e) { }
+                }
+            };
+        </script>
+        <script type="text/javascript">
+            try
+            {
+                var channelMessage =
+                {
+                    type: "event",
+                    value:
+                    {
+                        name: "CloudExperienceHost.done",
+                        data: "fail"
+                    }
+                };
+                window.external.notify(JSON.stringify(channelMessage));
+            } catch (e) {};
+            try
+            {
+                var externalHelper = new WizardExternalHelper();
+                externalHelper.setProperty("ExtendedErrorString", "");
+                externalHelper.setProperty("ErrorCode", parseInt(1));
+                externalHelper.setProperty("ErrorString", "This service isn't available right now—please try again later.");
+                externalHelper.finalNext();
+            } catch (e) {};
+            function OnBack() {};
+            function OnNext() {};
+        </script>
+    </head>
+    <body onLoad="BodyLoad()">
+        <div class="header" id="idHeaderTD9">
+            <h1>
+                <img src="images/ms-logo-v2.jpg" class="logo" alt=" " />
+                <span class="site-identifier">Account</span>
+            </h1>
+        </div>
+        <div class="content">
+            <h2>We're unable to complete your request</h2>
+            <p>Microsoft account is experiencing technical problems. Please try again later.</p>
+        </div>
+    </body>
+</html>
+<!-- _i-Agent:PostmanRuntime/6.3.2 -->
+

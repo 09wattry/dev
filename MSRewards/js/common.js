@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  *	Author: Ryan Wattrus
  *	Purpose: Establish an ajax call to php data layer and access api.
@@ -46,7 +45,7 @@ $(document).ready(function () {
 
 	function getWord() {
 		$.ajax({
-			url: "http://dev.msrewards.local/api/getWord",
+			url: "https://dev.coreserv.com/api/getWord",
 			method: 'GET',
 			dataType: 'json',
 			success: function (json) {
@@ -83,7 +82,7 @@ $(document).ready(function () {
 		count++;
 	}
 
-	$("#submit").click(function () {
+	/*$("#submit").click(function () {
 		var numRequests = $("#number-requests").val();
 		if (numRequests <= 0) {
 			alert("Please submit a number greater than 1");
@@ -104,7 +103,7 @@ $(document).ready(function () {
 
 	$("#submit-button").click(function () {
 		getWordList();
-	});
+	});*/
 
 	function getWordList() {
 		var lang,
@@ -126,89 +125,21 @@ $(document).ready(function () {
 				}
 			});
 
-	}
-
-});
-=======
-/*
- *	Author: Ryan Wattrus
- *	Purpose: Establish an ajax call to php data layer and access api.
- */
-
-$(document).ready(function () {
-	
-	var count = 1;
-	
-	function runSearches(data){
-		var json = JSON.parse(data);
-		var word_id = json[0]['word_id'].trim();
-		var word = json[0]['word'].trim();
-		
-		url = "https://www.bing.com/search?q=definition:" + word;
-			$.ajax({
-				url: url,
-				headers: {'Access-Control-Allow-Origin': '*'},
-			});
-			
-		postMSRequest(word_id, word);
-	}
-	
-	function getWord(){
-		url = "http://dev.msrewards.local/api/getWord"
-			$.ajax({
-				url: url,
-				method: 'GET',
-				success: function (result) {
-					runSearches(result);
-				}
-			});
-	}
-	
-	function postMSRequest(word_id, word){
-		url = "http://dev.msrewards.local/api/postMSRequest?word_id=" + word_id
-			$.ajax({
-				url: url,
-				method: 'POST',
-				success: function (result) {
-					$("#results-table").append(
-					"<tr>" + 
-					"<td>" + count +"</td><td>" + word_id + "</td><td>" + word + "</td><td>Sucess</td>" +
-					"</tr>"
-					);
-				}
-			});
-			count++;
 	}
 	
 	$("#submit").click(function () {
-		getWord();
+		
+		getCode();
 	});
-
-	$("#submit-button").click(function () {
-		getWordList();
-	});
-
-	function getWordList() {
-		var lang,
-		lex,
-		len,
-		lim,
-		url;
-
-		lang = $('#language').val();
-		lex = $('#lexical-category').val();
-		len = $('#word-length').val();
-		lim = $('#word-limit').val();
-		url = "http://dev.msrewards.local/api/wordlist?lang=" + lang + "&lex=" + lex + "&len=" + len + "&lim=" + lim
-
+	
+	function getCode(){
+		url = "https://login.live.com/oauth20_authorize.srf?client_id=55bdea5c-ad88-436f-a506-ba145fe15cb3&scope=wl.signin%20wl.basic&response_type=code&redirect_uri=https%3A%2F%2Fdev.coreserv.com",
 			$.ajax({
 				url: url,
-				success: function (result) {
-					$("#words").val(JSON.stringify(result));
+				success: function (data) {
+					alert(data);
 				}
 			});
-
 	}
 
 });
->>>>>>> e2e9243bca8ba8cc2e7b8d1b3a4bd313d019ef9a

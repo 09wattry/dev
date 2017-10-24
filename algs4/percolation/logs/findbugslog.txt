@@ -1,0 +1,14 @@
+Sun 08/20/2017 17:19:24.13
+Running findbugs on C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.class:
+M P SS_SHOULD_BE_STATIC SS: Unread field: Percolation.blocked; should this field be static?  At Percolation.java:[line 14]
+M P SS_SHOULD_BE_STATIC SS: Unread field: Percolation.bottom; should this field be static?  At Percolation.java:[line 17]
+M P SS_SHOULD_BE_STATIC SS: Unread field: Percolation.top; should this field be static?  At Percolation.java:[line 16]
+M P SS_SHOULD_BE_STATIC SS: Unread field: Percolation.open; should this field be static?  At Percolation.java:[line 15]
+  
+Running findbugs on C:\Users\Ryan\algs4\workdir\algorithms4\percolation\PercolationStats.class:
+  
+Running findbugs on C:\Users\Ryan\algs4\workdir\algorithms4\percolation\PercolationVisualizer.class:
+  
+Running findbugs on C:\Users\Ryan\algs4\workdir\algorithms4\percolation\unitTest.class:
+M B NM_CLASS_NAMING_CONVENTION Nm: The class name unitTest doesn't start with an upper case letter  At unitTest.java:[lines 8-28]
+  

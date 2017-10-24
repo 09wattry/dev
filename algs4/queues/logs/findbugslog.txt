@@ -1,0 +1,22 @@
+Sun 08/20/2017 16:54:05.35
+Sun 08/20/2017 17:07:43.62
+Sun 08/20/2017 17:09:30.55
+Sun 08/20/2017 17:09:46.92
+Sun 08/20/2017 17:10:08.17
+Sun 08/20/2017 17:13:52.36
+Sun 08/20/2017 17:14:07.18
+Sun 08/20/2017 17:15:56.99
+Running findbugs on C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque$ListIterator.class:
+L P SIC_INNER_SHOULD_BE_STATIC_NEEDS_THIS SIC: The class Deque$ListIterator could be refactored into a _static_ inner class  At Deque.java:[lines 103-113]
+  
+Running findbugs on C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque$Node.class:
+  
+Running findbugs on C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque.class:
+M D RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT RV: Return value of new Deque() ignored, but method has no side effect  At Deque.java:[line 118]
+  
+Running findbugs on C:\Users\Ryan\algs4\workdir\algorithms4\queues\Permutation.class:
+  
+Running findbugs on C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue$ListIterator.class:
+  
+Running findbugs on C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.class:
+  

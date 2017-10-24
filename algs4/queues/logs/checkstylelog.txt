@@ -1,0 +1,59 @@
+Sun 08/20/2017 17:15:37.85
+Running checkstyle on C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque.java:
+Starting audit...
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque.java:3:8: Unused import statement for 'edu.princeton.cs.algs4.StdIn'.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque.java:35:27: '{' at column 27 should have line break after.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque.java:35:28: '{' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque.java:35:65: ';' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque.java:35:65: '}' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque.java:50:27: '{' at column 27 should have line break after.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque.java:50:28: '{' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque.java:50:65: ';' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque.java:50:65: '}' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque.java:64:57: '(' is preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\Deque.java:78:57: '(' is preceded with whitespace.
+Audit done.
+Checkstyle ends with 11 errors.
+  
+Running checkstyle on C:\Users\Ryan\algs4\workdir\algorithms4\queues\Permutation.java:
+Starting audit...
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\Permutation.java:11:14: 'while' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\Permutation.java:11:32: '{' is not preceded with whitespace.
+Audit done.
+Checkstyle ends with 2 errors.
+  
+Running checkstyle on C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:
+Starting audit...
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:13:6: '}' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:17:6: '}' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:21:6: '}' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:24:23: '{' at column 23 should have line break after.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:24:62: ';' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:24:62: '}' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:32:35: '{' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:42:6: '}' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:44:26: '{' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:51:47: ',' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:54:29: ',' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:58:6: '}' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:60: 'method def modifier' have incorrect indentation level 3, expected level should be 4.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:60:42: '{' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:67:46: '(' is preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:70:6: '}' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:74:6: '}' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:78:12: Declare static and instance variables in order of their access modifiers: public, protected, package, and private.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:78:15: The instance (or static) variable 'index' must be private.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:80:30: '{' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:89:32: '(' is preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:89:34: '{' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:89:35: 'return' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:89:35: '{' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:89:66: ';' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:89:66: '}' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:91:28: '(' is preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:91:30: '{' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:95:26: '(' is preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\queues\RandomizedQueue.java:95:28: '{' is not preceded with whitespace.
+Audit done.
+Checkstyle ends with 30 errors.
+  

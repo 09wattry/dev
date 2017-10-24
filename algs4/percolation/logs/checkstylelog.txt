@@ -1,0 +1,58 @@
+Sun 08/20/2017 17:18:46.52
+Running checkstyle on C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:
+Starting audit...
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:2:8: Unused import statement for 'edu.princeton.cs.algs4.StdRandom'.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:34:35: Did you mean to use the conditional OR operator ('||') instead of the bitwise OR operator ('|') ?
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:38:35: Did you mean to use the conditional OR operator ('||') instead of the bitwise OR operator ('|') ?
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:49:42: Did you mean to use 'Math.pow()' instead of the bitwise XOR operator ('^') ?
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:49:53: Did you mean to use the conditional OR operator ('||') instead of the bitwise OR operator ('|') ?
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:54:35: Did you mean to use the conditional OR operator ('||') instead of the bitwise OR operator ('|') ?
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:58:35: Did you mean to use the conditional OR operator ('||') instead of the bitwise OR operator ('|') ?
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:63:35: Did you mean to use the conditional OR operator ('||') instead of the bitwise OR operator ('|') ?
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:67:35: Did you mean to use the conditional OR operator ('||') instead of the bitwise OR operator ('|') ?
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:71:63: Did you mean to use the conditional OR operator ('||') instead of the bitwise OR operator ('|') ?
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:72:15: 'if' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:72:41: Did you mean to use the conditional AND operator ('&&') instead of the bitwise AND operator ('&') ?
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:72:48: Did you mean to use the conditional OR operator ('||') instead of the bitwise OR operator ('|') ?
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:72:77: '{' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:85:33: Did you mean to use the conditional AND operator ('&&') instead of the bitwise AND operator ('&') ?
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\Percolation.java:98:64: Did you mean to use the conditional AND operator ('&&') instead of the bitwise AND operator ('&') ?
+Audit done.
+Checkstyle ends with 16 errors.
+  
+Running checkstyle on C:\Users\Ryan\algs4\workdir\algorithms4\percolation\PercolationStats.java:
+Starting audit...
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\PercolationStats.java:44:11: 'if' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\PercolationStats.java:44:34: '<=' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\PercolationStats.java:44:36: '{' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\PercolationStats.java:45: 'if' child have incorrect indentation level 13, expected level should be 12.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\PercolationStats.java:46:9: '}' at column 9 should be alone on a line.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\PercolationStats.java:46:10: 'else' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\PercolationStats.java:46:10: '}' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\PercolationStats.java:46:14: 'else' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\PercolationStats.java:46:14: '{' is not preceded with whitespace.
+Audit done.
+Checkstyle ends with 9 errors.
+  
+Running checkstyle on C:\Users\Ryan\algs4\workdir\algorithms4\percolation\PercolationVisualizer.java:
+Starting audit...
+Audit done.
+  
+Running checkstyle on C:\Users\Ryan\algs4\workdir\algorithms4\percolation\unitTest.java:
+Starting audit...
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\unitTest.java:8:14: The class 'unitTest' must start with an uppercase letter and use CamelCase.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\unitTest.java:18:11: 'if' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\unitTest.java:18:30: '{' is not preceded with whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\unitTest.java:25:11: 'if' is not followed by whitespace.
+C:\Users\Ryan\algs4\workdir\algorithms4\percolation\unitTest.java:25:30: '{' is not preceded with whitespace.
+Audit done.
+Checkstyle ends with 5 errors.
+  
+Running checkstyle on C:\Users\Ryan\algs4\workdir\algorithms4\percolation\percolation-testing\percolation\InteractivePercolationVisualizer.java:
+Starting audit...
+Audit done.
+  
+Running checkstyle on C:\Users\Ryan\algs4\workdir\algorithms4\percolation\percolation-testing\percolation\PercolationVisualizer.java:
+Starting audit...
+Audit done.
+  
